@@ -63,6 +63,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: title,
             color: noteColor,
+            order: props.noteContent.order,
             items: [...items, newItem]
         }, 'save')
 
@@ -76,6 +77,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: e.target.value,
             color: noteColor,
+            order: props.noteContent.order,
             items: items
         }, 'save')
     }
@@ -101,6 +103,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: title,
             color: noteColor,
+            order: props.noteContent.order,
             items: itemsUpdatedCheckboxes
         }, 'save')
     }
@@ -122,6 +125,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: title,
             color: noteColor,
+            order: props.noteContent.order,
             items: itemsMinusRemovedItem
         }, 'save')
     }
@@ -144,6 +148,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: title,
             color: noteColor,
+            order: props.noteContent.order,
             items: itemsWithUpdatedContent
         }, 'save')
     }
@@ -166,6 +171,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: title,
             color: noteColor,
+            order: props.noteContent.order,
             items: reorderedItems
         }, 'save')
     }
@@ -191,6 +197,7 @@ function Note(props) {
             noteID: props.noteContent.noteID,
             title: title,
             color: newColorCode,
+            order: props.noteContent.order,
             items: items
         }, 'save')
 
